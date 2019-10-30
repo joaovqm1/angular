@@ -1,5 +1,5 @@
 import { RequestService } from './../../services/request.service';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-login',
@@ -15,12 +15,13 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-  onLoginButtonClicked() {
+  async onLoginButtonClicked() {
     this.requestService.logIn(this.username, this.password).subscribe(
       user => {
         alert('User logged in');
+        console.log(user)
     }, error => {
-        alert(error);
+        alert(error.message);
     });
   }
 

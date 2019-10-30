@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  serverUrl: 'http://localhost:1338',
+  serverPublicKey: "-----BEGIN PGP PUBLIC KEY BLOCK-----\nVersion: OpenPGP.js v4.6.0\nComment: https://openpgpjs.org\n\nxjMEXXlDThYJKwYBBAHaRw8BAQdAhAMmDJVkJIPjl9EuYlNi7XIPu5j1zuxZ\nRmldls2EBSbNG0pvbiBTbWl0aCA8am9uQGV4YW1wbGUuY29tPsJ3BBAWCgAf\nBQJdeUNOBgsJBwgDAgQVCAoCAxYCAQIZAQIbAwIeAQAKCRA8Mo2bTof0iQWJ\nAQDl69L4dN4sZHMFcyUsRudKPO918BK31a8p8Rz9WcAZGAEA6RZMYeoDKbOb\nYGYBvxKw88GjN5yeXbQNZqkp6D90VQTOOARdeUNOEgorBgEEAZdVAQUBAQdA\n6WA4h03S+RFqw4BvK66lnybc87JG1+fADD7I6qRHU3sDAQgHwmEEGBYIAAkF\nAl15Q04CGwwACgkQPDKNm06H9IlwdgD/UXg4U8IUz8lDb86oUCXr14LoYVm6\nUzrrMS+1eso77W8BAJuTQN7yHVlGVZDBiLge7IF02wgOVgHflb90+eaYP+UH\n=HpmU\n-----END PGP PUBLIC KEY BLOCK-----"
 };
