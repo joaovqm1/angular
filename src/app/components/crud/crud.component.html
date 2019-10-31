@@ -1,8 +1,13 @@
 <h1>CRUD ADD</h1>
 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" *ngFor="let input of inputs">
-    {{object[input.field]}}
-    <input *ngIf="input.view == undefined || input.view !== false" type={{input.type}} placeholder={{input.placeholder}} (input)="object[input.field] = $event.target.value" />
-</div>
+    <div class="container" [ngSwitch]="input.type">
+        <div *ngSwitchCase="'input'">
+            <label for={{input.field}}>{{input.label}}</label>
+            <input *ngIf="input.view == undefined || input.view !== false" type={{input.inputType}} name={{input.field}}
+                placeholder={{input.placeholder}} [(ngModel)]="object[input.field]" />
+        </div>
+    </div>
+</div>>
+
 
 <button type="button" (click)="onSave()">SALVAR</button>
-

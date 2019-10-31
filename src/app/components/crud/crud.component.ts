@@ -13,11 +13,11 @@ export class CrudComponent implements OnInit {
   };
 
   inputs = [{
-    type: 'text', placeholder: 'Texto', field: 'text', view: true
+    type: 'input', label: 'Texto', inputType: 'text', placeholder: 'Algum texto', field: 'text', view: true
   }, {
-    type: 'number', placeholder: 'Número', field: 'number'
+    type: 'input', label: 'Número', inputType: 'number', placeholder: '0', field: 'number'
   }, {
-    type: 'date', placeholder: 'Data', field: 'date'
+    type: 'input', label: 'Data', inputType: 'date',  field: 'date'
   }];
 
   constructor() { }
